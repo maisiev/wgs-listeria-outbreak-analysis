@@ -1,0 +1,14 @@
+name: wgs
+channels:
+  - defaults
+dependencies:
+  - mlst
+  - quast
+  - multiqc
+  - shovill
+  - snippy
+  - ncbi-amrfinderplus
+  - iqtree
+  - fastp
+  - fastqc
+prefix: /opt/anaconda3/envs/wgs
