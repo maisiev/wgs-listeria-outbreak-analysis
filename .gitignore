@@ -1,3 +1,8 @@
 data/raw/
 results/assemblies/
 *.fastq.gz
+.DS_Store
+*.log
+results/qc/
+results/snps/
+results/trees/
