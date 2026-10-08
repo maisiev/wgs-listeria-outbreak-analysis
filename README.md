@@ -1,6 +1,6 @@
-# Bacterial WGS Outbreak Analysis
+# Bacterial WGS Outbreak Analysis - South African Listeria
 
-Can bacterial WGS distinguish closely related isolates associated with a documented Listeria monocytogenes outbreak, and what genomic evidence supports their relatedness?
+How does whole-genome sequencing reveal genomic relatedness among Listeria monocytogenes isolates associated with a major foodborne outbreak, and how do outbreak-associated isolates compare with genetically distinct isolates?
 
 Self-directed project using public Illumina data from *Listeria monocytogenes* isolates to practise assembly, typing, AMR screening and outbreak clustering.
 
