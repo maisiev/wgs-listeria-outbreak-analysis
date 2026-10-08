@@ -1,5 +1,7 @@
 # Bacterial WGS Outbreak Analysis
 
+Can bacterial WGS distinguish closely related isolates associated with a documented Listeria monocytogenes outbreak, and what genomic evidence supports their relatedness?
+
 Self-directed project using public Illumina data from *Listeria monocytogenes* isolates to practise assembly, typing, AMR screening and outbreak clustering.
 
 ## Setup
