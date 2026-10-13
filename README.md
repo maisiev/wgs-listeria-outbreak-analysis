@@ -1,24 +1,13 @@
-# Bacterial WGS Outbreak Analysis - South African Listeria
+# Listeria monocytogenes WGS Outbreak Analysis
 
-How does whole-genome sequencing reveal genomic relatedness among Listeria monocytogenes isolates associated with a major foodborne outbreak, and how do outbreak-associated isolates compare with genetically distinct isolates?
+Genomic epidemiology and outbreak investigation workflow using short-read whole-genome sequencing (WGS) data (*Listeria monocytogenes* samples SRR7056247–SRR7056256).
 
-Self-directed project using public Illumina data from *Listeria monocytogenes* isolates to practise assembly, typing, AMR screening and outbreak clustering.
+## Pipeline Overview
+1. **Quality Control & Trimming**: Raw reads assessed with FastQC and trimmed using `fastp` (`workflows/trim.sh`).
+2. **De Novo Assembly**: Assemblies generated using `Shovill` (`workflows/assemble.sh`).
+3. **Quality Assessment**: Evaluated using `QUAST` and `MultiQC` to check coverage, contig continuity, and GC content.
+4. **Contamination Screening**: Identified sample `SRR7056252` as contaminated and excluded it from downstream analysis.
 
-## Setup
-
-Create the conda environment from the file in `envs/`:
-
-```bash
-conda env create -f envs/wgs.yml
-conda activate wgs
-```
-
-**Apple Silicon (M-series) Macs:** many bioconda tools lack native ARM builds, so build for Intel instead:
-
-```bash
-CONDA_SUBDIR=osx-64 conda env create -f envs/wgs.yml
-conda activate wgs
-conda config --env --set subdir osx-64
-```
-
-Then download the AMRFinderPlus database once with `amrfinder -u`.
+## Repository Structure
+* `workflows/`: Pipeline shell scripts for trimming and assembly.
+* `data/` & `results/`: Local data and outputs (excluded from version control via `.gitignore`).
