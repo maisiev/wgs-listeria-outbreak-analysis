@@ -1,8 +1,13 @@
 data/raw/
 results/assemblies/
-*.fastq.gz
-.DS_Store
-*.log
+results/quast/
+results/multiqc/
 results/qc/
+results/kraken2/
+results/clean_assemblies/
 results/snps/
 results/trees/
+*.fastq.gz
+*.log
+.DS_Store
+**/ .DS_Store
